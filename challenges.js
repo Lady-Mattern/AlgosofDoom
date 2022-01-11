@@ -62,8 +62,6 @@ function addTwoNumbers(num1, num2) {
   } else {return NaN}
 }
 
-
-
 /*-----------------------------------------------------------------
 Challenge: 03-sumNumbers
 
@@ -91,8 +89,6 @@ function sumNumbers(numArr) {
   return sum
 }
 
-
-
 /*-----------------------------------------------------------------
 Challenge: 04-addList
 
@@ -112,9 +108,13 @@ add(7,-12) //=> -5
 -----------------------------------------------------------------*/
 // Your solution for 04-addList here:
 
-
-
-
+function addList(...nums) {
+  let sum = 0;
+  for(let i = 0; i < nums.length; i++) {
+    sum += nums[i];
+  }
+  return sum;
+}
 
 /*-----------------------------------------------------------------
 Challenge: 05-computeRemainder
