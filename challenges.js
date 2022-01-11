@@ -83,7 +83,13 @@ sumNumbers([]) //=> 0
 -----------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
 
-
+function sumNumbers(numArr) {
+  let sum = 0;
+  for(let i = 0; i < numArr.length; i++) {
+    sum += numArr[i];
+  }
+  return sum
+}
 
 
 
