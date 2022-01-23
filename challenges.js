@@ -237,9 +237,17 @@ charCount('Today is fantastic!') //=> { T: 1, o: 1, d: 1, a: 3, y: 1, ' ': 2, i:
 -----------------------------------------------------------------*/
 // Your solution for 09-charCount here:
 
-
-
-
+function charCount(str) {
+  let count = {};
+  for (let letter of str) {
+    if (count[letter]) {
+      count[letter]++;
+    } else {
+      count[letter] = 1;
+    }
+  }
+  return count;
+}
 
 /*-----------------------------------------------------------------
 Challenge: 10-formatWithPadding
