@@ -271,9 +271,9 @@ formatWithPadding(1234, '*', 3); //=> "1234"
 -----------------------------------------------------------------*/
 // Your solution for 10-formatWithPadding here:
 
+function formatWithPadding(num1, str, num2) {
 
-
-
+}
 
 /*-----------------------------------------------------------------
 Challenge: 11-isPalindrome
@@ -296,7 +296,13 @@ isPalindrome(''); //=> true
 -----------------------------------------------------------------*/
 // Your solution for 11-isPalindrome here:
 
-
+function isPalindrome(str) {
+  str = str.toLowerCase().replace(/ /g, '');
+  for (let i = 0; i < Math.floor(str.length / 2); i++) {
+    if (str.charAt(i) !== str.charAt(str.length - i - 1)) return false;
+  }
+  return true;
+}
 
 
 
